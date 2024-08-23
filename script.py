@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+
 # Post class to store data for each post that is retrieved
 class Story:
     def __init__(self, id, score, title, url):
@@ -31,6 +32,7 @@ def make_get_request(url):
 
 
 stories = []  # Create an empty array to store posts
+max_stories = 20  # The number of stories to retrieve
 story_ids = make_get_request(
     "https://hacker-news.firebaseio.com/v0/beststories.json?print=pretty")  # Get a list of post ids
 
@@ -67,7 +69,7 @@ def make_broadcast():
 # For each post id, make another request to get the individual post data, append this data into the posts array.
 # After retrieving all the post data, a broadcast can then be made.
 if story_ids:
-    for id in story_ids[:20]:
+    for id in story_ids[:max_stories]:
         story = make_get_request(f"https://hacker-news.firebaseio.com/v0/item/{id}.json?print=pretty")
         if story:
             stories.append(Story(id=story['id'], title=story['title'], url=story['url'], score=story['score']))
