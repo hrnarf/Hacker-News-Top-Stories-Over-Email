@@ -1,4 +1,4 @@
-# Hacker News top posts, over email!
+# Hacker News top stories, over email!
 If you're like me and often find yourself spending hours browsing Hacker News, this script might be just what you need. 
 
 It’s designed to fetch the top stories (limited to a specified number) from Hacker News. After getting each top story, it uses ConvertKit to send an email with the content of the stories. 
