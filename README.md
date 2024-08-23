@@ -1,7 +1,7 @@
 # Hacker News top stories, over email!
 If you're like me and often find yourself spending hours browsing [Hacker News](http://hacker.news), this script might be just what you need. 
 
-It’s designed to fetch the top stories from Hacker News. After getting each top story, it uses ConvertKit to send generate and send email with the content of the stories. 
+It’s designed to fetch the top stories from Hacker News. After getting each top story, it uses ConvertKit to send generate and send email with the title + link of each story. 
 
 The email which is created in ConvertKit is called a Broadcast, this broadcast can be automatically scheduled to send using parameters over the ConvertKit API, meaning you'd never need to login to your ConvertKit account once everything is setup.
 
