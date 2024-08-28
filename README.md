@@ -1,4 +1,4 @@
-# Hacker News Top Stories, Over Email. 📧
+# Hacker.News Top Stories, Over Email. 📧
 > A script to send Hacker News Top stories, to yourself, through email, via a free third party email service.
 
 If you're like me and often find yourself spending hours browsing [Hacker News](http://hacker.news), this script might be just what you need. 
